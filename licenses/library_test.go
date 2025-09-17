@@ -65,7 +65,6 @@ func TestLibraries(t *testing.T) {
 	}
 	directLibInfo := wantedLibInfo{
 		Name:        "github.com/pulumi/go-licenses/v2/licenses/testdata/direct",
-		Name:        "github.com/google/go-licenses/v2/licenses/testdata/direct",
 		LicenseFile: wd + "/testdata/direct/LICENSE",
 		Licenses:    classifier.licenses["testdata/direct/LICENSE"],
 	}
