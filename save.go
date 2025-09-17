@@ -22,8 +22,12 @@ import (
 	"regexp"
 	"strings"
 
+<<<<<<< HEAD
 	"github.com/pulumi/go-licenses/licenses"
 
+=======
+	"github.com/google/go-licenses/v2/licenses"
+>>>>>>> google/master
 	"github.com/otiai10/copy"
 	"github.com/spf13/cobra"
 	"k8s.io/klog/v2"

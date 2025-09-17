@@ -8,10 +8,9 @@ import (
 	"context"
 	"encoding/xml"
 	"fmt"
+	"github.com/pulumi/go-licenses/v2/internal/third_party/pkgsite/derrors"
 	"io"
 	"strings"
-
-	"github.com/pulumi/go-licenses/internal/third_party/pkgsite/derrors"
 )
 
 // This code adapted from https://go.googlesource.com/gddo/+/refs/heads/master/gosrc/gosrc.go.

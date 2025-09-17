@@ -10,11 +10,10 @@ package stdlib
 
 import (
 	"fmt"
-	"strings"
-
-	"github.com/pulumi/go-licenses/internal/third_party/pkgsite/derrors"
-	"github.com/pulumi/go-licenses/internal/third_party/pkgsite/version"
+	"github.com/pulumi/go-licenses/v2/internal/third_party/pkgsite/derrors"
+	"github.com/pulumi/go-licenses/v2/internal/third_party/pkgsite/version"
 	"golang.org/x/mod/semver"
+	"strings"
 )
 
 const (

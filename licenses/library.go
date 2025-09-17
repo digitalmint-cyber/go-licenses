@@ -17,15 +17,14 @@ package licenses
 import (
 	"context"
 	"fmt"
+	"github.com/pulumi/go-licenses/v2/internal/third_party/pkgsite/source"
 	"go/build"
-	"path/filepath"
-	"sort"
-	"strings"
-
-	"github.com/pulumi/go-licenses/internal/third_party/pkgsite/source"
 	"golang.org/x/sync/errgroup"
 	"golang.org/x/tools/go/packages"
 	"k8s.io/klog/v2"
+	"path/filepath"
+	"sort"
+	"strings"
 )
 
 // Library is a collection of packages covered by the same license file.
