@@ -1,4 +1,3 @@
-
 module github.com/pulumi/go-licenses/v2
 
 go 1.23.0
@@ -6,8 +5,8 @@ go 1.23.0
 require (
 	github.com/google/go-cmp v0.6.0
 	github.com/google/go-replayers/httpreplay v1.2.0
-	github.com/pulumi/licenseclassifier/v2 v2.0.1
 	github.com/otiai10/copy v1.10.0
+	github.com/pulumi/licenseclassifier/v2 v2.0.1
 	github.com/spf13/cobra v1.7.0
 	go.opencensus.io v0.24.0
 	golang.org/x/mod v0.27.0
