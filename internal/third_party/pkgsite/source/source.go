@@ -23,6 +23,12 @@ package source
 import (
 	"context"
 	"fmt"
+	"github.com/pulumi/go-licenses/v2/internal/third_party/pkgsite/derrors"
+	"github.com/pulumi/go-licenses/v2/internal/third_party/pkgsite/stdlib"
+	"github.com/pulumi/go-licenses/v2/internal/third_party/pkgsite/version"
+	"go.opencensus.io/plugin/ochttp"
+	"go.opencensus.io/trace"
+	"golang.org/x/net/context/ctxhttp"
 	"log" // We cannot use glog instead, because its "v" flag conflicts with other libraries we use.
 	"net/http"
 	"path"
@@ -30,13 +36,6 @@ import (
 	"strconv"
 	"strings"
 	"time"
-
-	"github.com/pulumi/go-licenses/internal/third_party/pkgsite/derrors"
-	"github.com/pulumi/go-licenses/internal/third_party/pkgsite/stdlib"
-	"github.com/pulumi/go-licenses/internal/third_party/pkgsite/version"
-	"go.opencensus.io/plugin/ochttp"
-	"go.opencensus.io/trace"
-	"golang.org/x/net/context/ctxhttp"
 )
 
 // Info holds source information about a module, used to generate URLs referring
