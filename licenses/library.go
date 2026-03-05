@@ -155,7 +155,7 @@ func Libraries(ctx context.Context, classifier Classifier, includeTests bool, ig
 
 			if p.Module == nil {
 				otherErrorOccurred = true
-				klog.Errorf("Package %s does not have module info. Non go modules projects are no longer supported. For feedback, refer to https://github.com/google/go-licenses/issues/128.", p.PkgPath)
+				klog.Errorf("Package %s does not have module info. Non go modules projects are no longer supported. For feedback, refer to https://github.com/pulumi/go-licenses/issues/128.", p.PkgPath)
 				return false
 			}
 
@@ -397,7 +397,7 @@ func (l *Library) FileURL(ctx context.Context, cl *source.Client, filePath strin
 		return "", wrap(err)
 	}
 	// TODO: there are still rare cases this may result in an incorrect URL.
-	// https://github.com/google/go-licenses/issues/73#issuecomment-1005587408
+	// https://github.com/pulumi/go-licenses/issues/73#issuecomment-1005587408
 	return remote.FileURL(relativePath), nil
 }
 
